@@ -12,7 +12,8 @@ function Reg() {
   };
   const submit = async () => {
     try {
-      const res = await axios.post("http://localhost:8000/reg", data);
+      //const res = await axios.post("http://localhost:8000/reg", data);
+      const res = await axios.post("https://new-g5f1.onrender.com/reg", data);  
       alert(res.data);
     } catch (xyz) {
       alert(xyz.response.data);
